@@ -1,0 +1,40 @@
+@import './../../scss/mixins';
+
+.TotalAmount {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  font-weight: 700;
+  background-color: var(--very-dark-cyan);
+  border-radius: 15px;
+  padding: 24px;
+
+  .amounts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    color: var(--white);
+
+    .value {
+      color: var(--strong-cyan);
+      font-size: em(30);
+    }
+  }
+
+  .reset-btn {
+    text-transform: uppercase;
+    font-size: em(24);
+    font-weight: 700;
+    height: 48px;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    border-radius: 6px;
+    border: none;
+
+    &.disabled {
+      background-color: var(--very-dark-cyan-disabled);
+    }
+  }
+}

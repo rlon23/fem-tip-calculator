@@ -1,0 +1,50 @@
+@import './scss/mixins';
+
+.App {
+  height: 100vh;
+  text-align: center;
+  background-color: var(--light-grayish-cyan);
+
+  input {
+    font-size: em(24);
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+    text-align: right;
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--second-grayish-cyan);
+    background-repeat: no-repeat;
+    background-position: 18px 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  &-logo {
+    margin: 50px 0 40px 0;
+    pointer-events: none;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  &-container {
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--white);
+
+    @include breakpoint(sm) {
+      border-radius: 30px;
+      max-width: 920px;
+      max-height: 480px;
+    }
+  }
+}
