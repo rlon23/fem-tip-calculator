@@ -10,6 +10,7 @@ function TotalAmount() {
     setTipPercentage,
     setPeople,
     handleReset,
+    reset,
   } = useGlobalContext();
 
   return (
@@ -30,7 +31,7 @@ function TotalAmount() {
         <span className='value'>${total.toFixed(2)}</span>
       </div>
       <button
-        className='reset-btn'
+        className={`${reset ? 'reset-btn' : 'reset-btn disabled'}`}
         type='reset'
         value='Reset'
         onClick={() => {

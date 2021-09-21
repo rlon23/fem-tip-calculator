@@ -16,7 +16,7 @@ function NumberPeople() {
           name='people'
           id='people'
           min='1'
-          placeholder='2'
+          placeholder='0'
           required
           onChange={(e) => setPeople(parseInt(e.target.value))}
         />

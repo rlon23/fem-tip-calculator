@@ -6,30 +6,38 @@ const AppProvider = ({ children }) => {
   const tipValues = [5, 10, 15, 25, 50];
   const [billValue, setBillValue] = useState(0);
   const [tipPercentage, setTipPercentage] = useState(tipValues[0]);
-  const [people, setPeople] = useState(2);
+  const [people, setPeople] = useState(0);
   const [tipAmount, setTipAmount] = useState(0);
   const [total, setTotal] = useState(0);
+  const [reset, setReset] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
+    setReset(true);
   }
 
   function handleReset() {
     Array.from(document.querySelectorAll('input')).forEach(
       (input) => (input.value = '')
     );
+    setReset(false);
   }
 
   useEffect(() => {
-    setTipAmount(() => {
-      let tip = (billValue * (tipPercentage / 100)) / people;
-      return parseFloat(tip.toFixed(2));
-    });
+    if (billValue !== 0 && people !== 0 && !isNaN(people)) {
+      setTipAmount(() => {
+        let tip = (billValue * (tipPercentage / 100)) / people;
+        return parseFloat(tip.toFixed(2));
+      });
 
-    setTotal(() => {
-      let total = billValue / people + tipAmount;
-      return parseFloat(total.toFixed(2));
-    });
+      setTotal(() => {
+        let total = billValue / people + tipAmount;
+        return parseFloat(total.toFixed(2));
+      });
+    } else {
+      setTipAmount(0);
+      setTotal(0);
+    }
   }, [billValue, tipPercentage, people, tipAmount]);
 
   return (
@@ -46,6 +54,7 @@ const AppProvider = ({ children }) => {
         tipAmount,
         total,
         handleReset,
+        reset,
       }}
     >
       {children}
