@@ -3,7 +3,7 @@ import './NumberPeople.scss';
 import { useGlobalContext } from '../../context';
 
 function NumberPeople() {
-  const { setPeople, handleSubmit } = useGlobalContext();
+  const { setPeople, handleSubmit, setReset } = useGlobalContext();
 
   return (
     <section className='NumberPeople'>
@@ -19,7 +19,10 @@ function NumberPeople() {
           min='1'
           placeholder='0'
           required
-          onChange={(e) => setPeople(Math.abs(parseInt(e.target.value)))}
+          onChange={(e) => {
+            setPeople(Math.abs(parseInt(e.target.value)));
+            setReset(true);
+          }}
         />
       </form>
     </section>

@@ -3,7 +3,7 @@ import './SelectTip.scss';
 import { useGlobalContext } from '../../context';
 
 function SelectTip() {
-  const { handleSubmit, tipPercentage, setTipPercentage, tipValues } =
+  const { handleSubmit, tipPercentage, setTipPercentage, tipValues, setReset } =
     useGlobalContext();
 
   return (
@@ -37,6 +37,7 @@ function SelectTip() {
             placeholder='Custom'
             onChange={(e) => {
               setTipPercentage(Math.abs(parseInt(e.target.value)));
+              setReset(true);
             }}
           />
         </form>

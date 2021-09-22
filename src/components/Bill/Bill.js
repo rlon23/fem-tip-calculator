@@ -3,7 +3,7 @@ import './Bill.scss';
 import { useGlobalContext } from '../../context';
 
 function Bill() {
-  const { setBillValue, handleSubmit } = useGlobalContext();
+  const { setBillValue, handleSubmit, setReset } = useGlobalContext();
 
   return (
     <section className='Bill'>
@@ -20,7 +20,10 @@ function Bill() {
           step='0.01'
           placeholder='0'
           required
-          onChange={(e) => setBillValue(Math.abs(parseFloat(e.target.value)))}
+          onChange={(e) => {
+            setBillValue(Math.abs(parseFloat(e.target.value)));
+            setReset(true);
+          }}
         />
       </form>
     </section>

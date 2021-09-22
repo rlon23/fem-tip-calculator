@@ -13,7 +13,6 @@ const AppProvider = ({ children }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setReset(true);
   }
 
   function handleReset() {
@@ -61,6 +60,7 @@ const AppProvider = ({ children }) => {
         total,
         handleReset,
         reset,
+        setReset,
       }}
     >
       {children}
