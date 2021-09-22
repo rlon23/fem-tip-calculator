@@ -3,7 +3,7 @@
 .SelectTip {
   margin-bottom: 39px;
 
-  input {
+  .input {
     @include breakpoint(sm) {
       text-align: center;
       padding: 0;
@@ -37,7 +37,13 @@
     background-color: var(--very-dark-cyan);
     border-radius: 6px;
     border: none;
+
+    &:hover {
+      color: var(--very-dark-cyan);
+      background-color: var(--strong-cyan);
+    }
   }
+
   .active-btn {
     color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);

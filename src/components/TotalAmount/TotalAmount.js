@@ -31,7 +31,7 @@ function TotalAmount() {
         <span className='value'>${total.toFixed(2)}</span>
       </div>
       <button
-        className='reset-btn'
+        className='btn reset-btn'
         disabled={!reset}
         type='reset'
         value='Reset'

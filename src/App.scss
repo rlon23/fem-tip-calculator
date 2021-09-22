@@ -10,7 +10,7 @@
     height: 100vh;
   }
 
-  input {
+  .input {
     font-size: em(24);
     font-weight: 700;
     color: var(--very-dark-cyan);
@@ -24,19 +24,27 @@
     background-position: 18px 15px;
     padding-left: 30px;
     padding-right: 20px;
+
+    &:focus {
+      outline-color: var(--strong-cyan);
+    }
   }
 
   input::placeholder {
     color: var(--dark-grayish-cyan);
   }
 
-  button {
+  .btn {
     cursor: pointer;
   }
 
   &-logo {
     margin: 50px 0 40px 0;
     pointer-events: none;
+
+    @include breakpoint(sm) {
+      margin: 0 0 40px 0;
+    }
   }
 
   &-header {

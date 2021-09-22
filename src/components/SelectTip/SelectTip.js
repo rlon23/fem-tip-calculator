@@ -17,8 +17,10 @@ function SelectTip() {
               onClick={() => {
                 setTipPercentage(val);
               }}
-              className={`SelectTip-btn ${
-                val === tipPercentage && 'active-btn'
+              className={`${
+                val === tipPercentage
+                  ? 'SelectTip-btn btn active-btn'
+                  : 'SelectTip-btn btn'
               }`}
             >
               {`${val}%`}
@@ -27,13 +29,14 @@ function SelectTip() {
         })}
         <form className='SelectTip-form' onSubmit={handleSubmit}>
           <input
+            className='input'
             type='number'
             name='custom'
             id='custom'
             min='1'
             placeholder='Custom'
             onChange={(e) => {
-              setTipPercentage(parseInt(e.target.value));
+              setTipPercentage(Math.abs(parseInt(e.target.value)));
             }}
           />
         </form>

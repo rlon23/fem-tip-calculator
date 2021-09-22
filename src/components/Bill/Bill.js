@@ -12,6 +12,7 @@ function Bill() {
           Bill
         </label>
         <input
+          className='input'
           type='number'
           name='bill'
           id='bill'
@@ -19,7 +20,7 @@ function Bill() {
           step='0.01'
           placeholder='0'
           required
-          onChange={(e) => setBillValue(parseFloat(e.target.value))}
+          onChange={(e) => setBillValue(Math.abs(parseFloat(e.target.value)))}
         />
       </form>
     </section>

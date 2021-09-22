@@ -60,5 +60,9 @@
       background-color: var(--very-dark-cyan-disabled);
       cursor: not-allowed;
     }
+
+    &:hover:enabled {
+      color: var(--white);
+    }
   }
 }
