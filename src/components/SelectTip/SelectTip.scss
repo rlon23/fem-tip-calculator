@@ -3,6 +3,13 @@
 .SelectTip {
   margin-bottom: 39px;
 
+  input {
+    @include breakpoint(sm) {
+      text-align: center;
+      padding: 0;
+    }
+  }
+
   &-label {
     font-weight: 700;
     font-size: em(16);
@@ -16,6 +23,11 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 
   &-btn {

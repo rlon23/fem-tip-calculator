@@ -3,6 +3,10 @@
 .NumberPeople {
   margin-bottom: 32px;
 
+  @include breakpoint(sm) {
+    margin-bottom: 0;
+  }
+
   &-label {
     display: block;
     font-weight: 700;

@@ -7,7 +7,7 @@ function SelectTip() {
     useGlobalContext();
 
   return (
-    <section className='SelectTip section'>
+    <section className='SelectTip'>
       <h3 className='SelectTip-label'>Select tip %</h3>
       <div className='SelectTip-container'>
         {tipValues.map((val) => {

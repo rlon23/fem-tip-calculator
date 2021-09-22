@@ -6,7 +6,7 @@ function NumberPeople() {
   const { setPeople, handleSubmit } = useGlobalContext();
 
   return (
-    <section className='NumberPeople section'>
+    <section className='NumberPeople'>
       <form className='NumberPeople-form' onSubmit={handleSubmit}>
         <label htmlFor='people' className='NumberPeople-label'>
           Number of People

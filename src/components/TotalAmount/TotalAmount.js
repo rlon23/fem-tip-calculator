@@ -17,21 +17,22 @@ function TotalAmount() {
     <section className='TotalAmount'>
       <div className='amounts'>
         <div className='tip-amount'>
-          Tip Amount <br />
-          <span className='person'>/person</span>
+          Tip Amount
+          <span className='person'>/ person</span>
         </div>
         <span className='value'>${tipAmount.toFixed(2)}</span>
       </div>
 
       <div className='amounts'>
         <div className='total-amount'>
-          Total <br />
-          <span className='person'>/person</span>
+          Total
+          <span className='person'>/ person</span>
         </div>
         <span className='value'>${total.toFixed(2)}</span>
       </div>
       <button
-        className={`${reset ? 'reset-btn' : 'reset-btn disabled'}`}
+        className='reset-btn'
+        disabled={!reset}
         type='reset'
         value='Reset'
         onClick={() => {

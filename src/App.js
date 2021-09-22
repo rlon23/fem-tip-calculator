@@ -14,10 +14,14 @@ function App() {
         <img src={logo} className='App-logo' alt='logo' />
       </header>
       <div className='App-container'>
-        <Bill />
-        <SelectTip />
-        <NumberPeople />
-        <TotalAmount />
+        <div className='App-inputs'>
+          <Bill />
+          <SelectTip />
+          <NumberPeople />
+        </div>
+        <div className='App-totals'>
+          <TotalAmount />
+        </div>
       </div>
     </div>
   );

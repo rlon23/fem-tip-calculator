@@ -6,7 +6,7 @@ function Bill() {
   const { setBillValue, handleSubmit } = useGlobalContext();
 
   return (
-    <section className='Bill section'>
+    <section className='Bill'>
       <form className='Bill-form' onSubmit={handleSubmit}>
         <label htmlFor='bill' className='Bill-label'>
           Bill

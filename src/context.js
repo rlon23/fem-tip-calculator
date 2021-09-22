@@ -24,7 +24,13 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    if (billValue !== 0 && people !== 0 && !isNaN(people)) {
+    if (
+      billValue !== 0 &&
+      !isNaN(billValue) &&
+      people !== 0 &&
+      !isNaN(people) &&
+      !isNaN(tipPercentage)
+    ) {
       setTipAmount(() => {
         let tip = (billValue * (tipPercentage / 100)) / people;
         return parseFloat(tip.toFixed(2));
