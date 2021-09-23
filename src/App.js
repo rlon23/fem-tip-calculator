@@ -9,7 +9,7 @@ import TotalAmount from './components/TotalAmount/TotalAmount';
 
 function App() {
   return (
-    <div className='App'>
+    <main className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
       </header>
@@ -23,7 +23,22 @@ function App() {
           <TotalAmount />
         </div>
       </div>
-    </div>
+      <div class='attribution'>
+        Challenge by{' '}
+        <a
+          href='https://www.frontendmentor.io?ref=challenge'
+          target='_blank'
+          rel='noreferrer'
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{' '}
+        <a href='https://github.com/rlon23' target='_blank' rel='noreferrer'>
+          Arlony Diaz
+        </a>
+        .
+      </div>
+    </main>
   );
 }
 

@@ -9,6 +9,15 @@
   @include breakpoint(sm) {
     height: 100vh;
   }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: em(16);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 
   .input {
     font-size: em(24);
@@ -43,7 +52,7 @@
     pointer-events: none;
 
     @include breakpoint(sm) {
-      margin: 0 0 40px 0;
+      margin: 0 0 90px 0;
     }
   }
 
