@@ -6,14 +6,12 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -26,10 +24,6 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
-
-### Screenshot
-
-![](./screenshot.jpg)
 
 ### Links
 
@@ -54,9 +48,9 @@ I will focus on learning the best way to use React's Hooks according to the proj
 
 ### Useful resources
 
-- [FreeCodeCamp](https://youtu.be/a_7Z7C_JCyo?t=27597) - John's React projects helped me to learn the basics of React JS and bit more, withou it I would be stuck trying to use use React.
-- [Coding Addic](https://www.youtube.com/watch?v=c5SIG7Ie0dM) - If you are new with Vanilla Javascript this can help you a lot.
+- [FreeCodeCamp](https://youtu.be/a_7Z7C_JCyo?t=27597) - John's React projects helped me to learn the basics of React JS and bit more, without it I would be stuck trying to use use React.
+- [Coding Addict](https://www.youtube.com/watch?v=c5SIG7Ie0dM) - If you are new with Vanilla Javascript this can help you a lot.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/rlon23)
+- Frontend Mentor - [@rlon23](https://www.frontendmentor.io/profile/rlon23)
