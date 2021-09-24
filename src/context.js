@@ -5,7 +5,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const tipValues = [5, 10, 15, 25, 50];
   const [billValue, setBillValue] = useState(0);
-  const [tipPercentage, setTipPercentage] = useState(tipValues[0]);
+  const [tipPercentage, setTipPercentage] = useState(0);
   const [people, setPeople] = useState(0);
   const [tipAmount, setTipAmount] = useState(0);
   const [total, setTotal] = useState(0);

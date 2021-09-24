@@ -7,10 +7,10 @@
   height: 100%;
   background-color: var(--very-dark-cyan);
   border-radius: 15px;
-  padding: 38px 24px 24px 24px;
+  padding: 38px 22px 24px 24px;
 
-  @include breakpoint(md) {
-    padding: 40px;
+  @include breakpoint(lg) {
+    padding: 60px 40px 40px 40px;
   }
 
   .amounts {
@@ -22,11 +22,6 @@
     color: var(--white);
     font-weight: 700;
 
-    .tip-amount,
-    .total-amount {
-      display: block;
-    }
-
     .person {
       display: block;
       margin-top: 5px;
@@ -35,12 +30,26 @@
     }
 
     .value {
-      text-align: right;
+      margin-left: auto;
       color: var(--strong-cyan);
-      font-size: em(30);
+      font-size: em(34);
+      max-width: 162px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+        scrollbar-width: none;
+      }
 
       @include breakpoint(md) {
-        font-size: em(50);
+        font-size: em(40);
+        max-width: 172px;
+      }
+      @include breakpoint(lg) {
+        font-size: em(48);
+        max-width: 205px;
       }
     }
   }

@@ -18,7 +18,7 @@ function TotalAmount() {
       <div className='amounts'>
         <div className='tip-amount'>
           Tip Amount
-          <span className='person'>/ person</span>
+          <span className='person'>/&nbsp;person</span>
         </div>
         <span className='value'>${tipAmount.toFixed(2)}</span>
       </div>
@@ -26,7 +26,7 @@ function TotalAmount() {
       <div className='amounts'>
         <div className='total-amount'>
           Total
-          <span className='person'>/ person</span>
+          <span className='person'>/&nbsp;person</span>
         </div>
         <span className='value'>${total.toFixed(2)}</span>
       </div>
@@ -37,7 +37,7 @@ function TotalAmount() {
         value='Reset'
         onClick={() => {
           setBillValue(0);
-          setTipPercentage(5);
+          setTipPercentage(0);
           setPeople(2);
           handleReset();
         }}

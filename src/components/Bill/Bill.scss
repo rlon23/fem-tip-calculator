@@ -1,11 +1,16 @@
 @import './../../scss/mixins';
 
 .Bill {
+  margin-bottom: 38px;
+
+  @include breakpoint(sm) {
+    margin-bottom: 46px;
+  }
+
   &-form {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    margin-bottom: 39px;
 
     .input {
       background-image: url('./../../images/icon-dollar.svg');

@@ -33,7 +33,7 @@ function SelectTip() {
             type='number'
             name='custom'
             id='custom'
-            min='1'
+            min='0'
             placeholder='Custom'
             onChange={(e) => {
               setTipPercentage(Math.abs(parseInt(e.target.value)));
